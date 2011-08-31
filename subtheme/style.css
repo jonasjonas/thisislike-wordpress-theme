@@ -1,0 +1,201 @@
+/*
+Theme Name:     Subtheme
+Theme URI:      http://thisislike.com/
+Description:    Template
+Author:         Frank Hellenkamp
+Author URI:     http://depage.net
+Template:       thisislike
+Version:        0.9.3
+Tags: 
+*/
+@import url("../thisislike/style.css");
+
+/* {{{ colors */
+.entry-headline .date .box {
+    background: #d9ce33;
+    color: #ffffff;
+}
+.entry-headline h2:hover a {
+    color:#d9ce33;
+}
+/* {{{ top-menu global*/
+    .top-menu li a,
+    .top-menu .description {
+        color: #ffffff;
+    }
+    .top-menu li a,
+    .top-menu li a span {
+        color: #676767;
+        background-color: #e8e8e8;
+        border-top-right-radius: 4px;
+        border-top-left-radius: 4px;
+        -moz-border-radius-topright: 4px;
+        -moz-border-radius-topleft: 4px;
+        -webkit-border-top-right-radius: 4px;
+        -webkit-border-top-left-radius: 4px;
+    }
+    .top-menu a:hover,
+    .top-menu .current-cat a,
+    .top-menu .current-cat a span,
+    .top-menu .cat-item a span,
+    .top-menu .current_page_item a,
+    #main-bottom-menu .description {
+        color: #ffffff;
+        background-color: #d9ce33;
+    }
+    .top-menu .page-comment a {
+        color: #676767;
+        background: #e8e8e8;
+    }
+    .top-menu .page-comment a:hover,
+    .top-menu .page-comment.current_page_item a {
+        color: #676767;
+        background: #ffffff;
+    }
+    .top-menu .current-cat a {
+        background-image: url(images/nav_back_white.png);
+        background-repeat: no-repeat;
+        padding-left: 28px;
+    }
+    .top-menu .current-cat a,
+    .top-menu .current_page_item a {
+        border-bottom-right-radius: 4px;
+        border-bottom-left-radius: 4px;
+        -moz-border-radius-bottomright: 4px;
+        -moz-border-radius-bottomleft: 4px;
+        -webkit-border-bottom-right-radius: 4px;
+        -webkit-border-bottom-left-radius: 4px;
+    }
+/* }}} */
+/* {{{ events */
+    #events .days li a {
+        color: #888888;
+        background: none;
+    }
+    #events .days li.today a,
+    #events .days li.today.upcoming a {
+        color: #d9ce33;
+        background: #ffffff;
+    }
+    #events .days li.upcoming a {
+        color: #000000;
+        background: #f5f5f5;
+    }
+    #events .days li.has-event a,
+    #events .days li.has-event.upcoming a {
+        color: #d9ce33;
+        border-bottom: 4px solid #cccccc;
+    }
+/* }}} */
+/* {{{ bottom-menu */
+    #main-bottom-menu .current-cat a,
+    #main-bottom-menu .current-cat-parent a {
+        background-image: url(images/nav_back_black.png);
+        background-repeat: no-repeat;
+        padding-left: 25px;
+    }
+    .bottom-menu li a, 
+    #main-bottom-menu li a,
+    #main-bottom-menu li.current-cat .children a,
+    #main-bottom-menu li.current-cat-parent .children a {
+        color: #676767;
+    }
+    .bottom-menu li a {
+        color: #676767;
+    }
+    .bottom-menu li a:hover, 
+    #main-bottom-menu li a:hover,
+    #main-bottom-menu li.current-cat a,
+    #main-bottom-menu li.current-cat-parent a,
+    #main-bottom-menu li.current-cat-parent .children li.current-cat a,
+    #main-bottom-menu li.current-cat-parent .children li.current-cat-parent a,
+    #main-bottom-menu li.current_page_item a {
+        color: #000000;
+    }
+    #main-bottom-menu li.current-cat-parent .children li.current-cat a:before {
+        content: "—";
+    }
+    #main-bottom-menu li.current-cat-parent .children li.current-cat a:after {
+        content: "—";
+    }
+/* }}} */
+/* }}} */
+/* {{{ icons */
+.entry.teaser .icon {
+    /*background: url(images/cat_playberlin_posts.png) top left no-repeat;*/
+}
+.entry.teaser.cat_Events .icon,
+.entry.teaser.cat_Termine .icon {
+    background: url(images/cat_playberlin_events.png) top left no-repeat;
+}
+/* }}} */
+/* {{{ icons konturen */
+#main-bottom-menu .cat-item-252 a {
+    padding-left: 30px;
+    margin-left: -15px;
+    background: url(images/icon-konturen.png) top left no-repeat;
+}
+#main-bottom-menu .cat-item-252.current-cat a,
+#main-bottom-menu .cat-item-252 a:hover {
+    background: url(images/icon-konturen-active.png) top left no-repeat;
+}
+/* }}} */
+/* {{{ icons herbarien */
+#main-bottom-menu .cat-item-100 a {
+    padding-left: 30px;
+    margin-left: -15px;
+    background: url(images/icon-herbarien.png) top left no-repeat;
+}
+#main-bottom-menu .cat-item-100.current-cat a,
+#main-bottom-menu .cat-item-100 a:hover {
+    background: url(images/icon-herbarien-active.png) top left no-repeat;
+}
+/* }}} */
+/* {{{ icons issue */
+#main-bottom-menu .cat-item-352 a {
+    padding-left: 30px;
+    margin-left: -15px;
+    background: url(images/icon-issue.png) top left no-repeat;
+}
+#main-bottom-menu .cat-item-352.current-cat a,
+#main-bottom-menu .cat-item-352 a:hover {
+    background: url(images/icon-issue-active.png) top left no-repeat;
+}
+/* }}} */
+/* {{{ icons treibgut */
+#main-bottom-menu .cat-item-353 a {
+    padding-left: 30px;
+    margin-left: -15px;
+    background: url(images/icon-treibgut.png) top left no-repeat;
+}
+#main-bottom-menu .cat-item-353.current-cat a,
+#main-bottom-menu .cat-item-353 a:hover {
+    background: url(images/icon-treibgut-active.png) top left no-repeat;
+}
+/* }}} */
+
+/* {{{ intro */
+.intro .separator {
+    width: 350px;
+}
+.intro a.scrolltocontent {
+    display: none;
+}
+.intro.scrollto a.scrolltocontent {
+    display: block;
+    font-size: 60px;
+    color: #ffffff;
+}
+.intro .entry-headline h1 {
+    width: 350px;
+    font-size: 40px;
+    line-height: 45px;
+}
+.entries .intro p {
+    font-size: 18px;
+    line-height: 23px;
+    color: #999999;
+}
+/* }}} */
+
+/* vim:set ft=css sw=4 sts=4 fdm=marker : */
