@@ -10,8 +10,6 @@
  * @author    Frank Hellenkamp [jonas@depagecms.net]
  */
 
-namespace depage\html;
-
 class columnsplitter {
     // {{{ variables
     protected $dimensions = array();
@@ -125,7 +123,7 @@ class columnsplitter {
             $this->activeBody->appendChild($copy);
         }
 
-        $this->columns[] = new \depage\htmlform\abstracts\htmldom();
+        $this->columns[] = new htmldom();
         $this->activeColumn = $this->columns[count($this->columns) - 1];
         $this->activeBody = $this->activeColumn->getBodyNode();
 

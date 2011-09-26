@@ -10,9 +10,7 @@
  * @author    Frank Hellenkamp [jonas@depagecms.net]
  */
 
-namespace depage\htmlform\abstracts;
-
-class htmldom extends \DOMDocument implements \Serializable {
+class htmldom extends DOMDocument implements Serializable {
     // {{{ variables
     /**
      * @brief Tags that are allowed inside of html

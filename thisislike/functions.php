@@ -127,10 +127,10 @@ function TIL_theme_multicolumn($content){
 /* {{{ TIL_theme_autocolumn() */
 function TIL_theme_autocolumn($content, $maxheight = 400){
     // parse html
-    $source_html = new \depage\htmlform\abstracts\htmldom();
+    $source_html = new htmldom();
     $source_html->loadHTML($content);
 
-    $splitter = new \depage\html\columnsplitter();
+    $splitter = new columnsplitter();
     $splitter->setMaxheight($maxheight);
     $splitter->setFontDimensions(TIL_get_font_dimensions());
     $columns = $splitter->split($source_html);
