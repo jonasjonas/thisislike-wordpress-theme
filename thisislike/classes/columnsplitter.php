@@ -173,7 +173,7 @@ class columnsplitter {
             return $height;
         } else {
             // other content
-            $textcontent = strip_tags($node->ownerDocument->saveHTML($node));
+            $textcontent = strip_tags($node->ownerDocument->saveXML($node));
             $len = strlen($textcontent);
 
             // add heights of included images

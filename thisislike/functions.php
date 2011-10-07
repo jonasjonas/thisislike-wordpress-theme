@@ -139,7 +139,7 @@ function TIL_theme_autocolumn($content, $maxheight = 400){
     $content = "";
     foreach ($columns as $column) {
         foreach ($column->getBodyNodes() as $node) {
-            $content .= $column->saveHTML($node);
+            $content .= $column->saveXML($node);
         }
         $content .= "</div>\n<div class=\"separator\">";
     }
